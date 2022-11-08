@@ -1,0 +1,162 @@
+html {
+    scroll-behavior: smooth;
+}
+/* ****************navbar************** */
+.navbar {
+    opacity: 0.9;
+    position: fixed;
+}
+.container-fluid a {
+    color: white;
+    font-size: 1.5em;
+}
+/* *****************header 100%vh*************** */
+header {
+    background: url(missing-puzzle-piece.jpg);
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 40px;
+}
+#deroul {
+    padding: 100px;
+    text-align: right;
+}
+h1 {
+    font-size: 3em; 
+    color: rgba(252, 250, 253, 1);
+    padding: 200px 0 0 20%;
+    text-shadow: -3px 3px 2px black;
+    animation: titre ease 3.5s;
+    
+}
+/* ******animation h1 **************/
+@keyframes titre {
+    0% {
+        opacity: 0;
+        transform: translateY(180px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* **********left : card * 2************** */
+.card {
+    background-image: url("web-48.jpg"); 
+    margin-bottom: 20px;
+    box-shadow: 10px 10px 10px rgba(21, 23, 22, 0.622);
+}
+.card-img-top {
+    padding: 10px;
+}
+.card-body img{
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+.container{
+    margin: 100px auto ;
+    padding: 20px;
+}
+/* **********right accordion********* */
+.accordion {
+    box-shadow: 10px 10px 10px rgb(21, 23, 22, 0.622);
+    text-align: center;
+}
+.accordion-item h2{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+/* *****************description tableau Right*********** */
+#tableau {
+    margin-top: 20px;
+    padding: 10px;
+    border: solid 0.8px rgba(151, 146, 146, 0.555);
+    border-radius: 0.6%;
+    box-shadow: 10px 10px 10px rgb(21, 23, 22, 0.622);
+}
+#tableau h3{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contact {
+    margin-top: 20px;
+}
+/* *****************animation button************ */
+#contact:hover {
+    animation: animation1 3s linear infinite alternate;
+}
+@keyframes animation1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+/* **************caroussel***************** */
+.carousel-inner{
+     display: flex;   
+}
+
+.carousel-inner img{
+    width: 180px;
+    height: 180px;  
+    text-align: center;   
+}
+.carousel-item{
+    /* margin-left: 45%; */
+    transition: ease;
+    text-align: center; 
+}
+.container1 {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.724);
+    box-shadow: 10px 10px 10px rgba(21, 23, 22, 0.622);
+}
+/* ***********fin de page************ */
+.fin {
+    text-shadow: -1px 0px 6px rgb(57, 158, 97);
+    text-align: center;   
+}
+.fin img {
+    box-shadow: 1px 7px 13px 6px black;
+    margin-bottom: 20px;
+    width: 290px;
+    animation: rotate-scale-down-ver ease 7s infinite;
+}
+@-webkit-keyframes rotate-scale-down-ver {
+    0% {
+      -webkit-transform: scale(1) rotateY(0);
+              transform: scale(1) rotateY(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateY(180deg);
+              transform: scale(0.5) rotateY(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateY(360deg);
+              transform: scale(1) rotateY(360deg);
+    }
+  }
+/* ************animation p*************** */
+.fin p:hover {
+    transition: 2s;
+    transform: scale(1.5);
+}
+
+/* *************responsive h1************ */
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2em;
+        text-align: end;
+    }
+    .carousel-inner img{
+        width: 120px;
+        height: 140px;
+        margin: 20px 68% 50px 32%;   
+    }
+}
